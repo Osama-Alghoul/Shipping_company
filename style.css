@@ -178,9 +178,11 @@ section.first .container .exp {
     background-color: var(--secondary-color);
     width: fit-content;
     padding: 13px 30px;
+
 }
 
-section.first .container .exp:hover {
+section.first .container .exp:hover,
+section.first .req:hover {
     cursor: pointer;
 }
 
@@ -190,6 +192,7 @@ section.first .req {
     padding: 20px;
     font-size: smaller;
     font-weight: 500;
+    border-color: transparent;
 }
 
 .title {
@@ -224,6 +227,7 @@ section.fifth .title {
 section.second {
     padding-top: 100px;
     padding-bottom: 100px;
+    gap: 10px;
 }
 
 section.second img {
@@ -346,7 +350,7 @@ section.third .more::before {
 }
 
 /* fourth section */
-section.fourth{
+section.fourth {
     margin: 150px 0;
 }
 
@@ -412,7 +416,7 @@ section.fifth .plane {
     width: 750px;
 }
 
-section.fifth .plane img{
+section.fifth .plane img {
     width: 100%;
 }
 
@@ -420,7 +424,7 @@ section.fifth .show img {
     width: 20px;
 }
 
-section.fifth .show{
+section.fifth .show {
     align-items: center;
 }
 
@@ -480,3 +484,10 @@ footer li:hover {
     cursor: pointer;
     color: white;
 }
+
+@media (max-width : 767px) {}
+
+@media (min-width : 768px) {
+}
+
+@media (min-width : 992px) {}

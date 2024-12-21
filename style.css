@@ -64,6 +64,73 @@ header .logo {
     align-items: center;
 }
 
+.hamburger-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* Evenly space the lines */
+    align-items: center;
+    background-color: #f8f8f8;
+    /* Optional background color */
+    border: 1px solid #ccc;
+    /* Optional border */
+    cursor: pointer;
+    border-radius: 8px;
+    display: none;
+}
+
+.hamburger-menu span {
+    width: 70%;
+    /* Width of the lines relative to the square */
+    height: 4px;
+    /* Thickness of the lines */
+    background-color: #333;
+    /* Line color */
+    border-radius: 2px;
+    /* Optional rounded corners */
+    display: block;
+    transition: 0.3s;
+    /* Smooth transition for animations (if needed) */
+}
+
+/* Example Hover Effect */
+.hamburger-menu:hover span {
+    background-color: #555;
+    /* Change color on hover */
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: none;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--secondary-items);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: white;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: var(--text-color);
+    color: white;
+}
+
 header img {
     width: 30px;
 }
@@ -507,8 +574,17 @@ footer li:hover {
         padding-bottom: 100px;
         width: 100%;
     }
-    header .logo{
+
+    header .logo {
         margin-bottom: 3px;
+    }
+
+    section.first nav ul {
+        display: none;
+    }
+
+    header .hamburger-menu {
+        display: flex;
     }
 }
 

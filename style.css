@@ -32,6 +32,8 @@ body {
     margin: 0;
 }
 
+
+/* For laptop display */
 header,
 section.first .container,
 section.first nav,
@@ -54,6 +56,7 @@ header {
     justify-content: space-between;
     padding-top: 45px;
     padding-bottom: 45px;
+    flex-wrap: wrap;
 }
 
 header .logo {
@@ -485,9 +488,47 @@ footer li:hover {
     color: white;
 }
 
-@media (max-width : 767px) {}
+/* Mobile view */
 
-@media (min-width : 768px) {
+@media (max-width : 767px) {
+
+    header,
+    section.first .container,
+    section.first nav,
+    section.second,
+    section.fourth,
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    section.first .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+    }
+    header .logo{
+        margin-bottom: 3px;
+    }
 }
 
-@media (min-width : 992px) {}
+/* Meduim Screens */
+
+@media (max-width : 991px) {
+
+    header,
+    section.first .container,
+    section.first nav,
+    section.second,
+    section.fourth,
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    section.first .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+    }
+}

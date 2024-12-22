@@ -70,12 +70,9 @@ header .logo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* Evenly space the lines */
     align-items: center;
     background-color: #f8f8f8;
-    /* Optional background color */
     border: 1px solid #ccc;
-    /* Optional border */
     cursor: pointer;
     border-radius: 8px;
     display: none;
@@ -83,22 +80,15 @@ header .logo {
 
 .hamburger-menu span {
     width: 70%;
-    /* Width of the lines relative to the square */
     height: 4px;
-    /* Thickness of the lines */
     background-color: #333;
-    /* Line color */
     border-radius: 2px;
-    /* Optional rounded corners */
     display: block;
     transition: 0.3s;
-    /* Smooth transition for animations (if needed) */
 }
 
-/* Example Hover Effect */
 .hamburger-menu:hover span {
     background-color: #555;
-    /* Change color on hover */
 }
 
 .topnav {
@@ -585,6 +575,29 @@ footer li:hover {
 
     header .hamburger-menu {
         display: flex;
+    }
+
+    /* Second section */
+    section.second {
+        flex-wrap: wrap;
+    }
+
+    section.second .services{
+        height: auto;
+    }
+
+    section.second .service {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* fifth section */
+    section.fifth div.container{
+        flex-wrap: wrap;
     }
 }
 
